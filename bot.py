@@ -21,11 +21,9 @@ LIST = {}
 
 @app.on_message(filters.command(['start']))
 async def start(client, message):
- await message.reply_text(text =f"""Hello {message.from_user.first_name }image to pdf bot 
+ await message.reply_text(text =f"""Hi {message.from_user.first_name } I am Image to Pdf converter robot by @Tellybots_4u
 
-i can convert image to pdf
-
-Special bot created by @Tellybots_4u""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
+Made with 💕 by @Tellybots_4u""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("Support group" ,url="https://t.me/tellybots_support") ],
@@ -49,7 +47,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click here 👉 /convert** ")
+ await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click /convert** ")
  
 
 @app.on_message(filters.command(['convert']))
