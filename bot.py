@@ -25,11 +25,11 @@ async def start(client, message):
 
 i can convert image to pdf
 
-This bot created by @mrlokaman""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
+Special bot created by @Tellybots_4u""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],
-                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]       ]        ) )
+                    InlineKeyboardButton("Support group" ,url="https://t.me/tellybots_support") ],
+                 [InlineKeyboardButton("Updates Channel", url="https://t.me/tellybots_4u") ]       ]        ) )
 
 
 
